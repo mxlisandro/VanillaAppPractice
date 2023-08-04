@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload = "reloadData()">
+    <h1>TO DO LIST:</h1>
+    <!-- <script src="/client/index.js"></script> -->
+    <form method="POST" action="/addTodo">
+        <input name="text" type="text" placeholder="Add new item to list:"></input>
+        <input type='submit' value="Sumbit">
+    </form>
+    <ul id="todoList"></ul>
+    <script src="/client/index.js"></script>
+</body>
+<footer>
+    <button onclick="logout()"> Logout </button>
+
+</footer>
+</html>
